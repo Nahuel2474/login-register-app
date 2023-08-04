@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { 
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none; /* Quita el estilo predeterminado del checkbox */
+    -moz-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #000;
+    outline: none;
+    position: relative;
+    transition: background-color 0.3s;
+  }
+
+  /* Estilo personalizado para el punto negro del checkbox seleccionado */
+  input[type="checkbox"]:checked::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 4px;
+    height: 4px;
+    background-color: #000;
+  }
+  input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+
+  input[type=number]::-webkit-inner-spin-button {
+    opacity: 1;
+  }
+
+  .activeColor {
+    border: 2px solid #ccc
+  }
+
+  .toastify-warn {
+    color: black;
+    --tw-bg-opacity: 1;
+    background-color: rgb(230 230 89 / var(--tw-bg-opacity));
+    font-weight: 300;
+  }
+
+
